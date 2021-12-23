@@ -10,14 +10,14 @@ function fetchCatFacts(){
     .then(resp => resp.json())
     .then(json => 
         renderCatFact(json.data)
-        // console.log(json.data)
         )
 }
 
 function renderCatFact(facts){
     let catFact = document.getElementById("fact-text")
-    facts.forEach(fact =>{
+    facts.map(fact =>{
         const p = document.createElement('p')
+        p.setAttribute("id", "actual-fact")
         p.innerHTML = fact.fact
         catFact.appendChild(p)
         // console.log(fact.fact)

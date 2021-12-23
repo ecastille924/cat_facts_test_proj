@@ -3,7 +3,14 @@ body{
     font-size: 1.3rem;
     font-family: sans-serif;
     color: #333;
-    background-color: rgb(246, 223, 169);
+    background-color: rgb(115, 80, 58);
+  }
+
+  #title{
+      font-size: 4rem;
+      color:antiquewhite;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
   #fact-text{

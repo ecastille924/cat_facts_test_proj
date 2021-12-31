@@ -30,3 +30,10 @@ body{
   #actual-fact:hover{
       color:gainsboro;
   }
+
+  #dropdown{
+    border:5px solid rgb(0, 0, 0);
+    border-style: solid;
+    padding: 1.5rem;
+    background-color: rgb(53, 132, 53);
+  }

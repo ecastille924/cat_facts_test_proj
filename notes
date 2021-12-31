@@ -1,0 +1,7 @@
+App Goals
+
+- fetch some data from api 
+- display data in DOM
+- allow user to select how many facts to display 
+    grab value of user input 
+    somehow set this value equal to displayed items?

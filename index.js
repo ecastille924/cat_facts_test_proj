@@ -24,13 +24,7 @@ function renderCatFact(facts){
 function userSelect(){
     let userSelection = document.getElementById("fact-num")
     userSelection.addEventListener("change", function(){
-        sessionStorage.setItem("userNum", userSelection.value), location.reload()
-    })
-    
+        sessionStorage.setItem("userNum", userSelection.value), 
+        location.reload()
+    })  
 }
-    
-
-
-
-    // document.getElementById("fact-num").addEventListener("click", console.log("yo"))
-

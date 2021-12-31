@@ -5,3 +5,5 @@ App Goals
 - allow user to select how many facts to display 
     grab value of user input 
     somehow set this value equal to displayed items?
+
+    use session storage 

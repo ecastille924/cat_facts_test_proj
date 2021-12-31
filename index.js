@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    userSelect();
+    userSelect()
+    fetchCatFacts()
 })
 
 function fetchCatFacts(){
@@ -7,12 +8,8 @@ function fetchCatFacts(){
     .then(resp => resp.json())
     .then(json => 
         renderCatFact(json.data)
-        // console.log(json.data)
     )
 }
-
-// Display some data in the DOM 
-
 
 function renderCatFact(facts){
     let catFact = document.getElementById("fact-text")
@@ -27,11 +24,9 @@ function renderCatFact(facts){
 function userSelect(){
     let userSelection = document.getElementById("fact-num")
     userSelection.addEventListener("change", function(){
-        sessionStorage.setItem("userNum", userSelection.value)
-       console.log(sessionStorage.getItem("userNum"))
-       return sessionStorage.getItem("userNum")
+        sessionStorage.setItem("userNum", userSelection.value), location.reload()
     })
-    fetchCatFacts()
+    
 }
     
 

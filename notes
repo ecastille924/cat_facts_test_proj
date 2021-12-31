@@ -7,3 +7,7 @@ App Goals
     somehow set this value equal to displayed items?
 
     use session storage 
+
+    fetchCatFacts -> store data from api 
+    rednerCatFact -> display data 
+    userSelect -> take in user input, reload page with new data 

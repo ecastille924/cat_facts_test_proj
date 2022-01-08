@@ -20,6 +20,8 @@ function fetchCatImage(){
 }
 
 function renderCatImage(image){
+    let imgDiv = document.getElementById("cat-image")
+    imgDiv.innerHTML = image
     console.log(image)
 }
 

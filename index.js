@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     userSelect()
     fetchCatFacts()
-    renderCatImage()
+    fetchCatImage()
 })
 
 function fetchCatFacts(){
@@ -13,10 +13,11 @@ function fetchCatFacts(){
 }
 
 function fetchCatImage(){
-    fetch('https://cataas.com/cat')
-    .then(resp=>resp.json)
-    .then(json => 
-        renderCatImage(json.data))
+    fetch('https://cataas.com/cat/cute/says/hello')
+    .then(resp=>resp.blob)
+    .then(blob => 
+        // console.log(blob)
+        renderCatImage(blob))
 }
 
 function renderCatImage(image){

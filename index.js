@@ -11,6 +11,13 @@ function fetchCatFacts(){
     )
 }
 
+function fetchCatImage(){
+    fetch('https://cataas.com/cat')
+    .then(resp=>resp.json)
+    .then(json => 
+        renderCatImage(json.data))
+}
+
 function renderCatFact(facts){
     let catFact = document.getElementById("fact-text")
     facts.slice(0,sessionStorage.getItem("userNum")).map(fact =>{

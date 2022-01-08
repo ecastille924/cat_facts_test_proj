@@ -11,3 +11,5 @@ App Goals
     fetchCatFacts -> store data from api 
     rednerCatFact -> display data 
     userSelect -> take in user input, reload page with new data 
+
+    Updating the DOM on Dropdown Selection: One Example

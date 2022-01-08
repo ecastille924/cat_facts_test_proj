@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     userSelect()
     fetchCatFacts()
+    renderCatImage()
 })
 
 function fetchCatFacts(){
@@ -16,6 +17,10 @@ function fetchCatImage(){
     .then(resp=>resp.json)
     .then(json => 
         renderCatImage(json.data))
+}
+
+function renderCatImage(image){
+    console.log(image)
 }
 
 function renderCatFact(facts){

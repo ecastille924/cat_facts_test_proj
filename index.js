@@ -14,10 +14,12 @@ function fetchCatFacts(){
 
 function fetchCatImage(){
     fetch('https://cataas.com/cat/cute/says/hello')
-    .then(resp=>resp.blob)
-    .then(blob => 
-        // console.log(blob)
-        renderCatImage(blob))
+    .then(function(response){
+        return response.blob()
+    })
+    .then(function(blob){
+        renderCatImage(blob)
+    })
 }
 
 function renderCatImage(image){

@@ -13,19 +13,20 @@ function fetchCatFacts(){
 }
 
 function fetchCatImage(){
-    fetch('https://cataas.com/cat/cute/says/hello')
+    let catImg = document.getElementById("cat-image")
+    fetch('https://cataas.com/cat?json=true')
     .then(function(response){
         return response.blob()
     })
-    .then(function(blob){
-        renderCatImage(blob)
+    .then(function(data){
+       let dispImg = URL.createObjectURL(data)
+       catImg.src = dispImg
+       console.log(dispImg)
     })
 }
 
 function renderCatImage(image){
-    let imgDiv = document.getElementById("cat-image")
-    imgDiv.innerHTML = image
-    console.log(image)
+    document.getElementById("cat-image").src = image
 }
 
 function renderCatFact(facts){

@@ -2,7 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
     userSelect()
     fetchCatFacts()
     fetchCatImage()
+    btnClick()
 })
+
+function btnClick(){
+    let button = document.getElementById("new-cat-btn")
+    button.addEventListener("click", fetchCatImage)
+}
 
 function fetchCatFacts(){
     fetch('https://catfact.ninja/facts')

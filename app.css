@@ -7,6 +7,7 @@ body{
   }
 
   #title{
+      display: inline;
       font-size: 4rem;
       color:antiquewhite;
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -42,4 +43,8 @@ body{
     max-width: 21rem;
     border:5px solid rgb(0, 0, 0);
     border-style: solid;
+  }
+
+  #img-box{
+      padding: 1rem;
   }

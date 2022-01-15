@@ -11,22 +11,11 @@ function fetchCatFacts(){
         renderCatFact(json.data)
     )
 }
-
 function fetchCatImage(){
-    let catImg = document.getElementById("cat-image")
-    fetch('https://cataas.com/cat?json=true')
-    .then(function(response){
-        return response.blob()
-    })
-    .then(function(data){
-       let dispImg = URL.createObjectURL(data)
-       catImg.src = dispImg
-       console.log(dispImg)
-    })
-}
-
-function renderCatImage(image){
-    document.getElementById("cat-image").src = image
+    let image = document.getElementById("cat-image")
+    fetch('https://api.thecatapi.com/v1/images/search')
+    .then(resp => resp.json())
+    .then(json => image.src = json[0].url)
 }
 
 function renderCatFact(facts){

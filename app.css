@@ -37,3 +37,9 @@ body{
     padding: 1.5rem;
     background-color: rgb(53, 132, 53);
   }
+
+  #cat-image{
+    max-width: 21rem;
+    border:5px solid rgb(0, 0, 0);
+    border-style: solid;
+  }

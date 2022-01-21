@@ -43,6 +43,11 @@ body{
     max-width: 21rem;
     border:5px solid rgb(0, 0, 0);
     border-style: solid;
+    transition: all .5s ease-in-out
+  }
+
+  #cat-image:hover{
+    transform: scale(1.02)
   }
 
   #img-box{

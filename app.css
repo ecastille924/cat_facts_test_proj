@@ -18,7 +18,7 @@ body{
       border:5px solid rgb(0, 0, 0);
       border-style: solid;
       padding: 1.5rem;
-      background-color: rgb(6, 72, 170);
+      background-color: rgb(141, 171, 216);
   }
 
   #actual-fact{
@@ -26,10 +26,12 @@ body{
       border-style:solid;
       padding: 2rem;
       background-color: blanchedalmond;
+      transition: all .3s ease-in-out
   }
 
   #actual-fact:hover{
-      color:gainsboro;
+      color:rgb(65, 64, 64);
+      transform: scale(1.05)
   }
 
   #dropdown{

@@ -61,7 +61,6 @@ body{
     border-radius: 5px;
     border: 1.5px solid rgb(141, 171, 216);
     box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-    box-sizing: border-box;
     color: rgb(34, 33, 33);
     cursor: pointer;
     display: inline-block;
@@ -71,6 +70,6 @@ body{
 
 #new-cat-btn:hover
 {
-  background-color: #b3d3ea;
-  color: #2c5777;
+  background-color: #e8ecee;
+  color: rgb(34, 33, 33);
 }

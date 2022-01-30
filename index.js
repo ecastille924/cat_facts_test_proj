@@ -25,6 +25,22 @@ function fetchCatFacts(){
     )
 }
 
+function submitName(){
+    let catName = document.getElementById("cat-name").value
+    let cat = {
+        name: catName
+    }
+    fetch("http://localhost:3000/cats", {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(cat),
+    }) 
+    .then(resp => resp.json())
+}
+
 function renderCatFact(facts){
     let catFact = document.getElementById("fact-text")
     facts.slice(0,sessionStorage.getItem("userNum")).map(fact =>{
